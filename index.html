@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREKO – Authentic Greek Deli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="navbar">
+    <nav class="container nav-inner">
+      <a href="#" class="logo">GREKO</a>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Find Us</a></li>
+        <li><a href="#contact" class="btn-nav">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Authentic Greek Flavours</p>
+      <h1>Taste the Heart<br/>of Greece</h1>
+      <p class="hero-sub">Freshly made souvlaki, mezze platters, and traditional deli goods — brought straight from the Mediterranean to your table.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="container strip-inner">
+      <div class="strip-item"><span class="strip-icon">🫒</span> Authentic Recipes</div>
+      <div class="strip-item"><span class="strip-icon">🌿</span> Fresh Daily</div>
+      <div class="strip-item"><span class="strip-icon">🇬🇷</span> Greek Imported Goods</div>
+      <div class="strip-item"><span class="strip-icon">🥙</span> Eat In &amp; Takeaway</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-block img-block-1"></div>
+        <div class="about-img-block img-block-2"></div>
+        <div class="about-badge">Est. 2008</div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2>A Little Corner of Greece in Your City</h2>
+        <p>GREKO was born from a simple dream — to share the warmth and flavour of a real Greek kitchen. Our founder Nikos left Thessaloniki with his grandmother's recipes and a passion for honest, delicious food.</p>
+        <p>Everything we serve is made fresh each morning: hand-rolled spanakopita, slow-marinated chicken souvlaki, creamy homemade tzatziki, and imported deli goods you won't find anywhere else.</p>
+        <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section section" id="menu">
+    <div class="container">
+      <p class="section-tag center">What We Serve</p>
+      <h2 class="center">Our Menu</h2>
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="mains">Mains</button>
+        <button class="tab" data-tab="mezze">Mezze</button>
+        <button class="tab" data-tab="deli">Deli</button>
+        <button class="tab" data-tab="sweets">Sweets</button>
+      </div>
+
+      <div class="menu-grid" id="mains">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chicken Souvlaki</h3><span class="price">£8.50</span>
+            </div>
+            <p>Tender marinated chicken skewers served with warm pitta, tzatziki and salad.</p>
+            <span class="tag">Popular</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1561626423-a51b45aef0a1?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Lamb Gyros</h3><span class="price">£9.50</span>
+            </div>
+            <p>Slow-roasted seasoned lamb wrapped in toasted pitta with tomatoes and onions.</p>
+            <span class="tag">Chef's Choice</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Mixed Grill Platter</h3><span class="price">£16.00</span>
+            </div>
+            <p>A feast of chicken souvlaki, lamb kofta, and loukaniko sausage with sides.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Greek Salad Bowl</h3><span class="price">£7.00</span>
+            </div>
+            <p>Crisp cucumber, ripe tomatoes, kalamata olives and a generous slab of feta.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="mezze">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Tzatziki</h3><span class="price">£3.50</span></div>
+            <p>Cool Greek yoghurt, grated cucumber, garlic and dill. Served with warm pitta.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1486893891924-e6a9f877e41f?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Spanakopita</h3><span class="price">£4.00</span></div>
+            <p>Crispy filo pastry parcels filled with spinach, feta and herbs.</p>
+            <span class="tag">Popular</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Dolmades</h3><span class="price">£4.50</span></div>
+            <p>Vine leaves stuffed with herbed rice and served with lemon yoghurt.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Mezze Platter</h3><span class="price">£13.00</span></div>
+            <p>A selection of hummus, tzatziki, dolmades, olives and warm pitta for sharing.</p>
+            <span class="tag">Sharing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="deli">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1559561853-08451507cbe7?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Imported Feta</h3><span class="price">£5.00 / 200g</span></div>
+            <p>PDO-certified barrel-aged feta imported directly from northern Greece.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Kalamata Olives</h3><span class="price">£3.50 / 200g</span></div>
+            <p>Rich, buttery olives cured in red wine vinegar and extra virgin olive oil.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1601599561213-832382fd07ba?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Extra Virgin Olive Oil</h3><span class="price">£9.00 / 500ml</span></div>
+            <p>Cold-pressed single-estate olive oil from the Peloponnese region.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1587813369290-091c9d432daf?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Greek Honey</h3><span class="price">£7.00 / 250g</span></div>
+            <p>Thyme honey from the mountains of Crete — intensely aromatic and golden.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid hidden" id="sweets">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Baklava</h3><span class="price">£3.00</span></div>
+            <p>Layers of crisp filo, crushed pistachios and walnuts soaked in orange blossom syrup.</p>
+            <span class="tag">Popular</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Loukoumades</h3><span class="price">£4.50</span></div>
+            <p>Fluffy Greek doughnuts drizzled with honey, cinnamon and crushed walnuts.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Galaktoboureko</h3><span class="price">£4.00</span></div>
+            <p>Creamy semolina custard wrapped in golden filo and finished with lemon syrup.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80')"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header"><h3>Greek Yoghurt &amp; Honey</h3><span class="price">£3.50</span></div>
+            <p>Thick strained yoghurt topped with our Cretan thyme honey and crushed nuts.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+      <p class="section-tag center">Fresh Every Day</p>
+      <h2 class="center">From Our Kitchen</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g-tall" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80')"></div>
+      <div class="gallery-item g-wide" style="background-image:url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80')"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="container">
+      <p class="section-tag center">What People Say</p>
+      <h2 class="center">Our Customers Love Us</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The best souvlaki outside of Athens. GREKO feels like a genuine family taverna — the food is always fresh and the staff are so welcoming."</p>
+          <div class="reviewer">— Sarah M.</div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"I buy my feta and olive oil here every week. The quality of the imported deli goods is exceptional. You won't find better in the whole city."</p>
+          <div class="reviewer">— James T.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Their mezze platter is absolutely incredible — perfect for sharing. GREKO has become our go-to spot for any occasion."</p>
+          <div class="reviewer">— Priya K.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-tag">Come Visit</p>
+        <h2>Find Us</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>42 Olive Street, London, EC1A 1BB</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <strong>Opening Hours</strong>
+              <p>Mon–Fri: 9am – 9pm</p>
+              <p>Sat: 9am – 10pm</p>
+              <p>Sun: 10am – 7pm</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p>020 7123 4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p>hello@grekogreek.co.uk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div class="map-placeholder">
+          <p>📍 42 Olive Street, London</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">GREKO</span>
+        <p>Bringing the warmth of Greece to every plate.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Find Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TripAdvisor</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">Allergen Info</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GREKO Greek Deli. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
